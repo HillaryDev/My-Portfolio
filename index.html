@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Hillary Ochieng | Information Systems Graduate & Web Developer
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+      <a href="#home" class="nav-logo">&lt;<span>HILLARY</span>/&gt;</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <a
+          href="https://github.com/HillaryDev"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://linkedin.com/in/Hillary Ochieng"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-text" data-aos>
+          <p class="hero-greeting">// Hello World — I'm</p>
+          <h1 class="hero-name glitch" data-text="HILLARY">HILLARY OCHIENG</h1>
+          <p class="hero-tagline">
+            <span id="typed-text"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero-bio">
+            Information Systems Graduate & Web Developer based in
+            <span class="accent">Nairobi, Kenya</span>. I build clean, fast, and
+            functional digital experiences — turning ideas into real-world
+            solutions.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-outline">Hire Me</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap" data-aos>
+          <div class="photo-frame">
+            <!-- Replace the img src with your actual photo path e.g. "assets/profile.jpg" -->
+            <img
+              src="assets/profile.jpg"
+              alt="HILLARY — Profile Photo"
+              class="profile-img"
+              onerror="
+                this.style.display = 'none';
+                document.getElementById('photo-placeholder').style.display =
+                  'flex';
+              "
+            />
+            <div class="photo-placeholder" id="photo-placeholder">
+              <i class="fas fa-user"></i>
+              <span>Add photo to<br />assets/profile.jpg</span>
+            </div>
+          </div>
+          <div class="photo-badge">
+            <i class="fas fa-circle status-dot"></i> Available for work
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title" data-aos>
+          <span class="title-tag">01.</span> About Me
+        </h2>
+
+        <div class="about-grid">
+          <div class="about-text" data-aos>
+            <p>
+              I'm a passionate
+              <strong>Information Systems graduate</strong> from
+              <span class="accent">Maseno University</span> (Class of 2025),
+              with hands-on experience in web development, ICT support, Computer Networks, and
+              digital solutions. I combine my academic background with
+              self-taught programming skills to build websites and systems that
+              make a real difference.
+            </p>
+            <p>
+              I've had the opportunity to gain practical experience through
+              attachments at the
+              <span class="accent">County Government of Kisumu</span> and the
+              <span class="accent">Kenya National Highways Authority</span>,
+              where I worked in ICT environments and built an understanding of
+              how technology supports organisations at scale.
+            </p>
+            <p>
+              I'm driven by curiosity and a desire to keep building, learning,
+              and delivering high-quality work for clients and organisations
+              across Kenya and beyond.
+            </p>
+
+            <div class="about-details">
+              <div class="detail-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                  <strong>BSc Information Systems</strong>
+                  <span>Maseno University — 2025</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <strong>Nairobi, Kenya</strong>
+                  <span>Open to remote work</span>
+                </div>
+              </div>
+              <div class="detail-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                  <strong>2+ Years Experience</strong>
+                  <span>Attachments & Freelance</span>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="assets/hillary-cv.pdf"
+              download
+              class="btn btn-primary"
+              style="margin-top: 1.5rem"
+            >
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+
+          <div class="about-timeline" data-aos>
+            <h3 class="timeline-heading">Experience</h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Dec 2025 – Apr 2026</span>
+                  <h4>ICT INTERNSHIP</h4>
+                  <p class="timeline-org">
+                    <i class="fas fa-building"></i> Kenya National Highways
+                    Authority
+                  </p>
+                  <p>
+                    Supported ICT operations and gained exposure to highway
+                    infrastructure management systems.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">May – Aug 2023</span>
+                  <h4>ICT Attachment</h4>
+                  <p class="timeline-org">
+                    <i class="fas fa-landmark"></i> County Government of Kisumu
+                    — ICT Dept.
+                  </p>
+                  <p>
+                    Provided technical support and assisted in ICT operations
+                    within the county government.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2021 – 2025</span>
+                  <h4>BSc Information Systems</h4>
+                  <p class="timeline-org">
+                    <i class="fas fa-university"></i> Maseno University
+                  </p>
+                  <p>
+                    Studied Information Systems, covering databases, software
+                    development, networks, and ICT management.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title" data-aos>
+          <span class="title-tag">02.</span> Skills
+        </h2>
+        <p class="section-sub" data-aos>Technologies & tools I work with</p>
+
+        <div class="skills-grid" data-aos>
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><i class="fab fa-html5"></i></div>
+            <h3>HTML5</h3>
+            <p>Semantic markup, accessibility, SEO-ready structure</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="90"></div>
+            </div>
+            <span class="skill-pct">90%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><i class="fab fa-css3-alt"></i></div>
+            <h3>CSS3</h3>
+            <p>Flexbox, Grid, animations, responsive design</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+            <span class="skill-pct">85%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><i class="fab fa-js-square"></i></div>
+            <h3>JavaScript</h3>
+            <p>DOM manipulation, APIs, interactive UI logic</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="75"></div>
+            </div>
+            <span class="skill-pct">75%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><i class="fab fa-github"></i></div>
+            <h3>Git & GitHub</h3>
+            <p>Version control, GitHub Pages deployment</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+            <span class="skill-pct">80%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><i class="fab fa-linux"></i></div>
+            <h3>Linux</h3>
+            <p>Kali Linux, terminal, file systems, scripting</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="70"></div>
+            </div>
+            <span class="skill-pct">70%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap"><i class="fas fa-database"></i></div>
+            <h3>Databases</h3>
+            <p>SQL fundamentals, data modelling & management</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="65"></div>
+            </div>
+            <span class="skill-pct">65%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <h3>Networking & ICT</h3>
+            <p>Network basics, ICT support, hardware & systems</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="72"></div>
+            </div>
+            <span class="skill-pct">72%</span>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon-wrap">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Wireframing, user-centered design, visual consistency</p>
+            <div class="skill-bar">
+              <div class="skill-fill" data-width="68"></div>
+            </div>
+            <span class="skill-pct">68%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title" data-aos>
+          <span class="title-tag">03.</span> Projects
+        </h2>
+        <p class="section-sub" data-aos>A selection of work I've built</p>
+
+        <div class="projects-grid" data-aos>
+          <!-- PROJECT 1: Golden Hive -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <!-- Replace with: <img src="assets/golden-hive.png" alt="Golden Hive Screenshot" /> -->
+              <div class="project-img-placeholder">
+                <i class="fas fa-store"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://HillaryDev.github.io/golden-hive"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Site
+                </a>
+                <a
+                  href="https://github.com/HillaryDev/golden-hive"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <h3>Golden Hive 🍯</h3>
+              <p>
+                A fully responsive e-commerce website for a honey shop,
+                featuring a product catalogue, shopping cart, and a clean modern
+                design. Hosted on GitHub Pages.
+              </p>
+            </div>
+          </div>
+
+          <!-- PROJECT 2: Harry Grooms Hair Studio -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder">
+                <i class="fas fa-cut"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://HillaryDev.github.io/harry-grooms"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Site
+                </a>
+                <a
+                  href="https://github.com/HillaryDev/harry-grooms"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <h3>Harry Grooms Hair Studio</h3>
+              <p>
+                A luxury single-page barbershop website for a studio in
+                Kileleshwa, Nairobi — featuring services, gallery, booking
+                section, and smooth scroll experience.
+              </p>
+            </div>
+          </div>
+
+          <!-- PROJECT 3: Portfolio -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <div class="project-img-placeholder">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div class="project-overlay">
+                <a
+                  href="https://HillaryDev.github.io/portfolio"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i> Live Site
+                </a>
+                <a
+                  href="https://github.com/HillaryDev/portfolio"
+                  target="_blank"
+                  class="overlay-btn"
+                >
+                  <i class="fab fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-tags">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </div>
+              <h3>Personal Portfolio</h3>
+              <p>
+                This very portfolio — a dark, techy, responsive personal website
+                built from scratch with vanilla HTML, CSS, and JS. Deployed on
+                GitHub Pages.
+              </p>
+            </div>
+          </div>
+
+          <!-- ADD MORE PROJECT CARDS HERE -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title" data-aos>
+          <span class="title-tag">04.</span> Services
+        </h2>
+        <p class="section-sub" data-aos>What I can do for you</p>
+
+        <div class="services-grid" data-aos>
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p>
+              Building fast, responsive, and well-structured websites using
+              HTML, CSS, and JavaScript — tailored to your brand and business
+              needs.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3>Responsive Design</h3>
+            <p>
+              Every site I build works beautifully on mobile, tablet, and
+              desktop — no compromises across screen sizes.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-store"></i></div>
+            <h3>Business Websites</h3>
+            <p>
+              Professional websites for shops, studios, and small businesses —
+              helping you establish a credible online presence.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-tools"></i></div>
+            <h3>Website Maintenance</h3>
+            <p>
+              Ongoing support, content updates, bug fixes, and improvements to
+              keep your site running smoothly after launch.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-sitemap"></i></div>
+            <h3>ICT Consultation</h3>
+            <p>
+              Practical ICT advice for small organisations — from hardware setup
+              and network configuration to digital workflow improvements.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-search"></i></div>
+            <h3>SEO Basics</h3>
+            <p>
+              Structuring your website so it's discoverable — semantic HTML,
+              fast load times, meta tags, and clean architecture.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title" data-aos>
+          <span class="title-tag">05.</span> Contact
+        </h2>
+        <p class="section-sub" data-aos>
+          Let's work together — reach out any time
+        </p>
+
+        <div class="contact-grid" data-aos>
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>
+              Whether you have a project in mind, a question, or just want to
+              connect — my inbox is always open.
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div>
+                  <strong>Email</strong>
+
+                  <!-- Replace with your actual email -->
+                  <a href="mailto:hochieng07@gmail.com">hochieng07@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div>
+                  <strong>Phone</strong>
+                  <!-- Replace with your actual phone number -->
+                  <a href="tel:+254768418725">+254 768 418 725</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <strong>Location</strong>
+                  <span>Nairobi, Kenya</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-socials">
+              <a
+                href="https://github.com/your-github-username"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://linkedin.com/in/Hillary Ochieng"
+                target="_blank"
+                class="social-btn"
+              >
+                <i class="fab fa-linkedin-in"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Project enquiry..."
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <p class="form-note" id="form-status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footer-logo">&lt;<span>HILLARY</span>/&gt;</p>
+        <p class="footer-copy">
+          Designed & Built by <span class="accent">HILLARY</span> &copy;
+          <span id="year"></span>
+        </p>
+        <div class="footer-socials">
+          <a
+            href="https://github.com/HillaryDev"
+            target="_blank"
+            aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://linkedin.com/in/Hillary Ochieng"
+            target="_blank"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
