@@ -5,10 +5,12 @@
 const typedEl = document.getElementById('typed-text');
 const phrases = [
   'Web Developer',
-  'Information Systems Graduate',
   'Frontend Developer',
   'Problem Solver',
+  'Tech Enthusiast',
+  'Team Player',
   'Open to Opportunities',
+  'Information Systems Graduate',
 ];
 let phraseIndex = 0;
 let charIndex = 0;
@@ -44,7 +46,7 @@ function type() {
 type();
 
 
-// ===== NAVBAR SCROLL EFFECT =====
+// ----- NAVBAR SCROLL EFFECT -----
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
@@ -57,7 +59,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-// ===== ACTIVE NAV LINK HIGHLIGHT =====
+// ----- ACTIVE NAV LINK HIGHLIGHT -----
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -81,7 +83,7 @@ function highlightNav() {
 }
 
 
-// ===== MOBILE HAMBURGER MENU =====
+// ----- MOBILE HAMBURGER MENU ----- 
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-links');
 
@@ -101,7 +103,7 @@ navMenu.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-// ===== SCROLL REVEAL (data-aos) =====
+// ----- SCROLL REVEAL (data-aos) -----
 const aoElements = document.querySelectorAll('[data-aos]');
 
 const revealObserver = new IntersectionObserver(
@@ -122,7 +124,7 @@ const revealObserver = new IntersectionObserver(
 aoElements.forEach(el => revealObserver.observe(el));
 
 
-// ===== SKILL BAR ANIMATION =====
+// ----- SKILL BAR ANIMATION -----
 const skillFills = document.querySelectorAll('.skill-fill');
 
 const skillObserver = new IntersectionObserver(
@@ -142,7 +144,7 @@ const skillObserver = new IntersectionObserver(
 skillFills.forEach(fill => skillObserver.observe(fill));
 
 
-// ===== CONTACT FORM =====
+// ----- CONTACT FORM -----
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
@@ -168,11 +170,11 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 
-// ===== FOOTER YEAR =====
+// ----- FOOTER YEAR -----
 document.getElementById('year').textContent = new Date().getFullYear();
 
 
-// ===== SMOOTH SCROLL for all hash links =====
+// ----- SMOOTH SCROLL for all hash links -----
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const target = document.querySelector(this.getAttribute('href'));

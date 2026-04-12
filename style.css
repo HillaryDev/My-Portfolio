@@ -1,7 +1,5 @@
-/* ===================================
-   KASSIM PORTFOLIO — style.css
-   Dark & Techy Professional Theme
-=================================== */
+/* ----- HILLARY PORTFOLIO — style.css
+   Dark & Techy Professional Theme ----- */
 
 /* --- CSS Variables --- */
 :root {
@@ -127,9 +125,8 @@ ul { list-style: none; }
 
 .full-width { width: 100%; justify-content: center; }
 
-/* ===================================
-   NAVIGATION
-=================================== */
+/* ----- NAVIGATION ----- */
+
 #navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -227,9 +224,8 @@ ul { list-style: none; }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ===================================
-   HERO
-=================================== */
+/* ----- HERO ----- */
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -286,6 +282,7 @@ ul { list-style: none; }
 }
 
 /* Glitch Effect */
+
 .glitch { position: relative; }
 .glitch::before,
 .glitch::after {
@@ -426,9 +423,8 @@ ul { list-style: none; }
 
 @keyframes float { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(6px); } }
 
-/* ===================================
-   ABOUT
-=================================== */
+/* ----- ABOUT ----- */
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -478,6 +474,7 @@ ul { list-style: none; }
 }
 
 /* Timeline */
+
 .timeline-heading {
   font-family: var(--font-head);
   color: var(--text-head);
@@ -549,9 +546,8 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
-/* ===================================
-   SKILLS
-=================================== */
+/* ----- SKILLS ----- */
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -630,9 +626,8 @@ ul { list-style: none; }
   color: var(--accent);
 }
 
-/* ===================================
-   PROJECTS
-=================================== */
+/* ----- PROJECTS ----- */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -748,9 +743,8 @@ ul { list-style: none; }
   line-height: 1.65;
 }
 
-/* ===================================
-   SERVICES
-=================================== */
+/* ----- SERVICES ----- */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -807,9 +801,8 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 
-/* ===================================
-   CONTACT
-=================================== */
+/* ----- CONTACT ----- */
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
@@ -949,9 +942,7 @@ ul { list-style: none; }
   min-height: 1.2em;
 }
 
-/* ===================================
-   FOOTER
-=================================== */
+/* ----- FOOTER ----- */
 .footer {
   background: var(--bg-dark);
   border-top: 1px solid var(--border);
@@ -996,9 +987,7 @@ ul { list-style: none; }
 
 .footer-socials a:hover { color: var(--accent); }
 
-/* ===================================
-   SCROLL REVEAL
-=================================== */
+/* ----- SCROLL REVEAL ----- */
 [data-aos] {
   opacity: 0;
   transform: translateY(30px);
@@ -1010,9 +999,7 @@ ul { list-style: none; }
   transform: translateY(0);
 }
 
-/* ===================================
-   RESPONSIVE — TABLET
-=================================== */
+/* ----- RESPONSIVE — TABLET ----- */
 @media (max-width: 900px) {
   .hero-inner { flex-direction: column-reverse; text-align: center; }
   .hero-bio { margin: 0 auto 2.5rem; }
@@ -1039,9 +1026,8 @@ ul { list-style: none; }
   .hamburger { display: flex; z-index: 1001; }
 }
 
-/* ===================================
-   RESPONSIVE — MOBILE
-=================================== */
+/* ----- RESPONSIVE — MOBILE ----- */
+
 @media (max-width: 600px) {
   .section { padding: 70px 0; }
   #navbar { padding: 1rem 1.25rem; }
