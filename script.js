@@ -148,23 +148,25 @@ skillFills.forEach(fill => skillObserver.observe(fill));
 const contactForm = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
 
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
+  const data = new FormData(contactForm);
 
-  if (!name || !email || !message) {
-    formStatus.textContent = '⚠ Please fill in all required fields.';
+  const response = await fetch(contactForm.action, {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    formStatus.textContent = '✓ Message sent! I\'ll get back to you soon.';
+    formStatus.style.color = 'var(--accent2)';
+    contactForm.reset();
+  } else {
+    formStatus.textContent = '⚠ Something went wrong. Please try again.';
     formStatus.style.color = '#ff6b6b';
-    return;
   }
-
-  // Simulate send — replace this block with EmailJS / Formspree integration
-  formStatus.textContent = '✓ Message sent! I\'ll get back to you soon.';
-  formStatus.style.color = 'var(--accent2)';
-  contactForm.reset();
 
   setTimeout(() => { formStatus.textContent = ''; }, 5000);
 });
